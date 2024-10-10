@@ -21,7 +21,7 @@ function FooterBar() {
   return (
     <section className="bg-[#232529] px-4 md:px-[94px] py-[90px]">
       <div className="flex gap-2 items-center">
-        <img src="/images/logo.png" alt="Piltonet Logo" width={25} height={25} />
+        <img src="/images/logo.png" alt="Piltonet Logo" width={35} height={35} />
         <p className="font-[700] text-gray-300">
           PILTONET
         </p>
