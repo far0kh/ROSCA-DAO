@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { X } from "lucide-react";
 import MainButton from "./MainButton";
+import Link from "next/link";
 
 function NavBar() {
   const links = [
     {
       route: "/",
-      name: "Piltonet",
+      name: "Home",
       badgeCount: 0,
     },
     // {
@@ -27,10 +28,13 @@ function NavBar() {
       {/* DESKTOP */}
       <div className=" hidden lg:block animate-in fade-in zoom-in bg-white p-4">
         <div className="flex justify-between mx-4 items-center">
-          <div>
-            <img src="/images/logo.png" alt="Piltonet Logo" width={40} height={40} />
-          </div>
-          <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center w-full select-none px-4">
+          <Link className="flex gap-2 items-center" href="/">
+            <img src="/images/logo.png" alt="Piltonet Logo" width={35} height={35} />
+            <p className="font-[700] text-gray-700 hover:text-primary">
+              PILTONET
+            </p>
+          </Link>
+          <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none px-4">
             {links.map((item, index) => (
               <div key={index} className="flex gap-2">
                 <p
@@ -66,7 +70,7 @@ function NavBar() {
       >
         <div className="flex justify-between mx-[10px]">
           <div className="flex gap-[50px] text-[16px] items-center select-none">
-            <img src="/images/logo.png" alt="Piltonet Logo" width={40} height={40} />
+            <img src="/images/logo.png" alt="Piltonet Logo" width={35} height={35} />
           </div>
           <div className="flex items-center gap-[40px]">
             {menu ? (
