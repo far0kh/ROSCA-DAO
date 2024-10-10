@@ -1,4 +1,5 @@
 import NavBar from "@/components/common/NavBar";
+import FooterBar from "@/components/common/FooterBar";
 import HeroSection from "@/components/home/HeroSection";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       </div>
 
       <div className="mt-8 md:mt-[81px] flex flex-col">
-        {/* <FooterSection /> */}
+        <FooterBar />
       </div>
     </main>
   );
