@@ -6,12 +6,12 @@ import MainButton from "./MainButton";
 import Link from "next/link";
 
 function NavBar() {
-  const links = [
-    {
-      route: "/",
-      name: "Home",
-      badgeCount: 0,
-    },
+  const links: { route: string; name: string; badgeCount?: number }[] = [
+    // {
+    //   route: "/",
+    //   name: "Home",
+    //   badgeCount: 0,
+    // },
     // {
     //   route: "/",
     //   name: "Pricing",

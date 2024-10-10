@@ -22,14 +22,14 @@ function FooterBar() {
     <section className="bg-[#232529] px-4 md:px-[94px] py-[90px]">
       <div className="flex gap-2 items-center">
         <img src="/images/logo.png" alt="Piltonet Logo" width={35} height={35} />
-        <p className="font-[700] text-gray-300">
-          PILTONET
-        </p>
-      </div>
-      <div>
-        <p className="font-[100] text-[0.9rem] text-gray-500">
-          Blockchain-Based ROSCA (Rotating Savings and Credit Associations)
-        </p>
+        <div className="flex flex-col">
+          <p className="font-[700] text-gray-300 leading-4">
+            PILTONET
+          </p>
+          <p className="font-[100] text-[0.8rem] text-gray-500 leading-4">
+            Blockchain-Based ROSCA (Rotating Savings and Credit Associations)
+          </p>
+        </div>
       </div>
 
       <div className="mt-[32px] pb-[50px] flex justify-between w-full gap-8 flex-col md:flex-row flex-wrap">
