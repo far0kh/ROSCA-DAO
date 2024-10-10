@@ -24,9 +24,9 @@ function NavBar() {
   };
 
   return (
-    <div className="md:sticky md:top-0 md:shadow-none z-20 mt-[5rem] md:mt-0">
+    <div className="top-0 md:shadow-none z-20 mt-0">
       {/* DESKTOP */}
-      <div className=" hidden lg:block animate-in fade-in zoom-in bg-white p-4">
+      <div className="hidden lg:block animate-in fade-in zoom-in bg-white p-4">
         <div className="flex justify-between mx-4 items-center">
           <Link className="flex gap-2 items-center" href="/">
             <img src="/images/logo.png" alt="Piltonet Logo" width={35} height={35} />
@@ -65,7 +65,7 @@ function NavBar() {
       </div>
       {/* MOBILE */}
       <div
-        className={`block lg:hidden shadow-sm fixed top-0 w-full z-[999] bg-white py-4 animate-in fade-in zoom-in  ${menu ? " bg-primary py-2" : ""
+        className={`block lg:hidden ${"shadow-sm" /* "fixed" */} top-0 w-full z-[999] bg-white py-4 animate-in fade-in zoom-in  ${menu ? " bg-primary py-2" : ""
           } `}
       >
         <div className="flex justify-between mx-[10px]">
