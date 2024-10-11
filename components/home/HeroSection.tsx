@@ -10,13 +10,13 @@ function HeroSection() {
         <div
           className={cn(
             gilroyBold.className,
-            "text-4xl md:text-[92px] text-center text-primary md:leading-[5.5rem] my-8"
+            "text-6xl md:text-[6rem] text-center text-primary md:leading-[5.5rem] my-8 md:my-12"
           )}
         >
-          0% Interest, <br /> When We Save Together!
+          0% Interest, <br /> When We Save <br /> Together!
         </div>
 
-        <p className="mb-8 text-[22px] text-center text-[#31373D]">
+        <p className="mb-8 text-xl md:text-2xl text-center text-slate-700">
           Piltonet goal is to help people around the world to lend and borrow with a trusted network of friends, family, and verified accounts.
         </p>
 
