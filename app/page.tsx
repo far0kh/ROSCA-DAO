@@ -9,6 +9,7 @@ export default function Home() {
       <div className="flex flex-col-reverse md:flex-col">
         <NavBar />
       </div>
+
       <div className="flex flex-col gap-12 md:gap-32 mt-8 md:mt-12 px-4 md:px-20">
         <HeroSection />
         <BlogSection />

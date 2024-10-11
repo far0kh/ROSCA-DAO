@@ -2,6 +2,7 @@ import React from "react";
 import MainButton from "../common/MainButton";
 import { cn } from "@/lib/utils";
 import { gilroyBold } from "@/lib/utils";
+import { HeroYoutubeModal } from "./HeroYoutubeModal";
 
 function HeroSection() {
   return (
@@ -20,11 +21,11 @@ function HeroSection() {
           Piltonet goal is to help people around the world to lend and borrow with a trusted network of friends, family, and verified accounts.
         </p>
 
-        <div className="flex gap-[12px] justify-center">
+        <div className="flex gap-3 justify-center">
           <MainButton
             text="Get Started"
             size="small"
-            className="border-none rounded-[12px]"
+            className="border-none rounded-xl"
           />
           {/* <MainButton
             text="Talk to sales"
@@ -33,6 +34,9 @@ function HeroSection() {
           /> */}
         </div>
 
+        <div className="flex w-full justify-center mt-8 md:mt-12">
+          <HeroYoutubeModal />
+        </div>
       </div>
     </section>
   );
