@@ -56,7 +56,7 @@ function NavBar() {
             <MainButton
               text="Sign in"
               width="contain"
-              className="bg-white border text-[#31373D] border-[#EDEEF0] hover:bg-white"
+              className="bg-white border text-[#31373D] border-[#EDEEF0] hover:bg-white hover:text-orange-500"
             />
 
             <MainButton

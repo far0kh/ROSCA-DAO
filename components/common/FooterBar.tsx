@@ -37,7 +37,7 @@ function FooterBar() {
           <p className="text-[#9098A0] mb-[12px]">Social</p>
           <div className="flex flex-col gap-3">
             {data.social.map((item, index) => (
-              <a key={index} href={item.link} target="_blank" className="text-[#555E67] hover:cursor-pointer">
+              <a key={index} href={item.link} target="_blank" className="text-gray-700 hover:text-orange-500 hover:cursor-pointer">
                 {item.name}
               </a>
               // <Link href={item.link} key={index} className="text-[#555E67] hover:cursor-pointer">

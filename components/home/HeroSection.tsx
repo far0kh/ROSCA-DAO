@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { gilroyBold } from "@/lib/utils";
 import { HeroYoutubeModal } from "./HeroYoutubeModal";
 import { TbFlame } from "react-icons/tb";
+import { FaRocket } from "react-icons/fa";
 
 function HeroSection() {
   return (
@@ -26,14 +27,9 @@ function HeroSection() {
           <MainButton
             text="Start now"
             size="small"
-            className="border-none rounded-xl hover:bg-orange-500"
-            iconComponent={<TbFlame size={23} />}
+            className="border-none gap-1 rounded-xl hover:bg-orange-500"
+            iconComponent={<FaRocket size={15} />}
           />
-          {/* <MainButton
-            text="Talk to sales"
-            size="small"
-            className="rounded-[12px] border-[1px] border-[#EDEEF0] bg-white hover:bg-white text-[#31373D]"
-          /> */}
         </div>
 
         <div className="flex w-full justify-center mt-8 md:mt-12">
