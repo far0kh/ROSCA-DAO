@@ -26,7 +26,7 @@ function HeroSection() {
           <MainButton
             text="Start now"
             size="small"
-            className="border-none rounded-xl"
+            className="border-none rounded-xl hover:bg-orange-500"
             iconComponent={<TbFlame size={23} />}
           />
           {/* <MainButton

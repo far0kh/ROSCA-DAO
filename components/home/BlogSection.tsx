@@ -43,7 +43,7 @@ const BlogSection = () => {
               >
                 <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                   <img
-                    className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                    className="filter grayscale group-hover:filter-none size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
                     src={item.image}
                     alt={item.title}
                   />
@@ -53,10 +53,10 @@ const BlogSection = () => {
                     className="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-neutral-300 dark:group-hover:text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-gray-800 dark:text-neutral-200">
+                  <p className="text-gray-800 dark:text-neutral-200">
                     {item.desc}
                   </p>
-                  <p className="mt-5 inline-flex items-center gap-x-1 text-orange-500 decoration-2 group-hover:underline font-medium">
+                  <p className="mt-5 inline-flex items-center gap-x-1 group-hover:text-orange-500 decoration-2 font-medium">
                     Read more
                     <FaAngleRight />
                   </p>

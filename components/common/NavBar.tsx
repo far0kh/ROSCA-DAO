@@ -59,7 +59,11 @@ function NavBar() {
               className="bg-white border text-[#31373D] border-[#EDEEF0] hover:bg-white"
             />
 
-            <MainButton text="Get Started" width="contain" className="border-none" />
+            <MainButton
+              text="Get Started"
+              width="contain"
+              className="border-none hover:bg-orange-500"
+            />
           </div>
         </div>
       </div>
@@ -110,12 +114,16 @@ function NavBar() {
 
               <div className="flex flex-col gap-[20px] select-none">
                 <MainButton
-                  text="Sign in"
+                  text="Sign In"
                   width="contain"
                   className="bg-white text-[#31373D] border-[#EDEEF0] hover:bg-white"
                 />
 
-                <MainButton text="Get Started" width="contain" className="border-none" />
+                <MainButton
+                  text="Get Started"
+                  width="contain"
+                  className="border-none hover:bg-orange-500"
+                />
               </div>
             </div>
           </div>
