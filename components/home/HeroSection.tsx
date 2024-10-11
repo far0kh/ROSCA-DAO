@@ -3,6 +3,7 @@ import MainButton from "../common/MainButton";
 import { cn } from "@/lib/utils";
 import { gilroyBold } from "@/lib/utils";
 import { HeroYoutubeModal } from "./HeroYoutubeModal";
+import { TbFlame } from "react-icons/tb";
 
 function HeroSection() {
   return (
@@ -23,9 +24,10 @@ function HeroSection() {
 
         <div className="flex gap-3 justify-center">
           <MainButton
-            text="Get Started"
+            text="Start now"
             size="small"
             className="border-none rounded-xl"
+            iconComponent={<TbFlame size={23} />}
           />
           {/* <MainButton
             text="Talk to sales"

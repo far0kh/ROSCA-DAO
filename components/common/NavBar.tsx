@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { X } from "lucide-react";
 import MainButton from "./MainButton";
 import Link from "next/link";
+import { FiMenu, FiX } from "react-icons/fi";
 
 function NavBar() {
   const links: { route: string; name: string; badgeCount?: number }[] = [
@@ -59,7 +59,7 @@ function NavBar() {
               className="bg-white border text-[#31373D] border-[#EDEEF0] hover:bg-white"
             />
 
-            <MainButton text="Start for free" width="contain" />
+            <MainButton text="Get Started" width="contain" className="border-none" />
           </div>
         </div>
       </div>
@@ -74,14 +74,14 @@ function NavBar() {
           </div>
           <div className="flex items-center gap-[40px]">
             {menu ? (
-              <X
-                className="cursor-pointer animate-in fade-in zoom-in text-black"
+              <FiX
+                size={30}
+                className="cursor-pointer animate-in fade-in zoom-in"
                 onClick={toggleMenu}
               />
             ) : (
-              <img
-                src="/images/menu.svg"
-                alt="logo"
+              <FiMenu
+                size={30}
                 className="cursor-pointer animate-in fade-in zoom-in"
                 onClick={toggleMenu}
               />
@@ -115,7 +115,7 @@ function NavBar() {
                   className="bg-white text-[#31373D] border-[#EDEEF0] hover:bg-white"
                 />
 
-                <MainButton text="Start for free" width="contain" />
+                <MainButton text="Get Started" width="contain" className="border-none" />
               </div>
             </div>
           </div>

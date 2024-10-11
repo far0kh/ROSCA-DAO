@@ -69,7 +69,7 @@ function FooterBar() {
           <p className="font-medium text-[#9098A0] mb-4">Ready to start?</p>
           <div className="flex flex-col gap-[12px] justify-start">
             <MainButton
-              text="Start for free"
+              text="Get Started"
               size="small"
               width="full_width"
               className="border-none bg-[#31373D] hover:bg-[#31373D] rounded-[12px]"
