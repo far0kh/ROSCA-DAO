@@ -13,19 +13,19 @@ const HoverLogo: React.FC<{}> = () => {
 
   const defaultAction = () => {
     setSrc(defaultSrc)
-    setTextColor(defaultTextColor)
+    // setTextColor(defaultTextColor)
   }
 
   const hoverAction = () => {
     setSrc(hoverSrc)
-    setTextColor(hoverTextColor)
+    // setTextColor(hoverTextColor)
   }
 
   return (
     <div
       onMouseEnter={() => hoverAction()}
       onMouseLeave={() => defaultAction()}
-      className='flex items-center'
+      className='flex gap-1 items-center'
     >
       <img
         src={src}
