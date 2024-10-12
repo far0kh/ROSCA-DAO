@@ -1,12 +1,17 @@
-import NavBar from "@/components/common/NavBar";
-import FooterBar from "@/components/common/FooterBar";
-import HeroSection from "@/components/home/HeroSection";
-import BlogSection from "@/components/home/BlogSection";
+import NavBar from "@/components/common/NavBar"
+import FooterBar from "@/components/common/FooterBar"
+import HeroSection from "@/components/home/HeroSection"
+import BlogSection from "@/components/home/BlogSection"
+import AlertSection from "@/components/home/AlertSection"
+import { SignedIn } from "@clerk/nextjs"
 
 export default function Home() {
   return (
     <main>
-      <div className="flex flex-col-reverse md:flex-col">
+      <div className="flex flex-col">
+        <SignedIn>
+          <AlertSection />
+        </SignedIn>
         <NavBar />
       </div>
 
@@ -19,5 +24,5 @@ export default function Home() {
         <FooterBar />
       </div>
     </main>
-  );
+  )
 }

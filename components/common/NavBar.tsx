@@ -81,7 +81,14 @@ function NavBar() {
             </SignedOut>
 
             <SignedIn>
-              <SignOutButton />
+              <SignOutButton>
+                <Button
+                  size='lg'
+                  className="h-12 px-4 bg-white border text-gray-700 border-gray-200 rounded-3xl hover:bg-white hover:text-orange-500"
+                >
+                  Sign out
+                </Button>
+              </SignOutButton>
               <UserButton />
             </SignedIn>
           </div>
@@ -154,7 +161,14 @@ function NavBar() {
 
                 <SignedIn>
                   <UserButton />
-                  <SignOutButton />
+                  <SignOutButton>
+                    <Button
+                      size='lg'
+                      className="h-12 px-4 bg-white border text-gray-700 border-gray-200 rounded-3xl hover:bg-white hover:text-orange-500"
+                    >
+                      Sign out
+                    </Button>
+                  </SignOutButton>
                 </SignedIn>
               </div>
             </div>
