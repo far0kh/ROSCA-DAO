@@ -72,7 +72,7 @@ function NavBar() {
               <SignUpButton>
                 <Button
                   size='lg'
-                  className="h-12 px-4 border-none rounded-3xl hover:bg-orange-500"
+                  className="h-12 px-8 border-none rounded-3xl hover:bg-orange-500"
                 >
                   Get started
                 </Button>

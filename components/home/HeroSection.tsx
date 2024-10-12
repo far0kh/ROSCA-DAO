@@ -37,7 +37,7 @@ function HeroSection() {
           </SignedOut>
         </div>
 
-        <div className="flex w-full justify-center mt-8 md:mt-12">
+        <div className="flex w-full justify-center mt-32 md:mt-36">
           <HeroYoutubeModal />
         </div>
       </div>
