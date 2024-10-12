@@ -25,15 +25,15 @@ const HoverLogo: React.FC<{}> = () => {
     <div
       onMouseEnter={() => hoverAction()}
       onMouseLeave={() => defaultAction()}
-      className='flex gap-1 items-center'
+      className='flex gap-2 items-center'
     >
       <img
         src={src}
         alt={alt}
-        width={35}
-        height={35}
+        width={40}
+        height={40}
       />
-      <p className={`font-bold text-gray-700 ${textColor}`}>
+      <p className={`hidden md:block font-normal text-2xl tracking-wider text-gray-700 ${textColor}`}>
         PILTONET
       </p>
     </div>
