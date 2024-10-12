@@ -18,9 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-          {children}
+      <html
+        lang='en'
+        className='flex min-h-screen flex-col scroll-smooth antialiased'
+        suppressHydrationWarning
+      >
+        <body className={`flex flex-col min-h-screen min-w-fit md:min-w-full ${geistSans.variable} ${geistMono.variable}`}>
+          <main className='flex max-w-full mx-auto my-auto'>{children}</main>
           <Toaster />
         </body>
       </html>
