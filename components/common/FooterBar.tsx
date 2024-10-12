@@ -20,7 +20,7 @@ function FooterBar() {
     // support: ["Help Center", "Talk to support", "API docs", "System status"],
   };
   return (
-    <section className="bg-[#232529] px-4 md:px-[94px] py-[90px]">
+    <section className="bg-[#232529] px-4 md:px-24 pt-24 pb-4">
       <div className="flex gap-2 items-center">
         <img src="/images/logo-w.webp" alt="Piltonet Logo" width={50} height={50} />
         <div className="flex flex-col">
@@ -33,7 +33,7 @@ function FooterBar() {
         </div>
       </div>
 
-      <div className="mt-[32px] pb-[50px] flex justify-between w-full gap-8 flex-col md:flex-row flex-wrap">
+      <div className="mt-8 pb-4 flex justify-between w-full gap-8 flex-col md:flex-row flex-wrap">
         <div>
           <p className="text-[#9098A0] mb-[12px]">Social</p>
           <div className="flex flex-col gap-3">
@@ -82,6 +82,11 @@ function FooterBar() {
             <ContactModal />
           </div>
         </div>
+
+      </div>
+
+      <div className="m-auto lg:w-full text-center mt-10">
+        <p className="text-gray-400">{`© ${new Date().getFullYear()} • Piltonet.com`}</p>
       </div>
 
     </section>
