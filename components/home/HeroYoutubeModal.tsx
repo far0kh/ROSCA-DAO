@@ -9,7 +9,9 @@ export function HeroYoutubeModal() {
         <img
           src="/images/hero-background.webp"
           alt="Piltonet on Youtube"
-          className="filter grayscale hover:filter-none hover:cursor-pointer"
+          width="1440"
+          height="720"
+          className="w-[1440px] h-[720px] object-cover filter grayscale hover:filter-none hover:cursor-pointer"
         />
       </DialogTrigger>
       <DialogContent className="p-2 min-w-full md:min-w-[calc(100vw-800px)]">
