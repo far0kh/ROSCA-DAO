@@ -33,7 +33,7 @@ const HoverLogo: React.FC<{}> = () => {
         width={40}
         height={40}
       />
-      <p className={`hidden md:block font-normal text-2xl tracking-wider text-gray-700 ${textColor}`}>
+      <p className={`hidden md:block font-normal text-xl tracking-wider text-gray-700 ${textColor}`}>
         PILTONET
       </p>
     </div>
