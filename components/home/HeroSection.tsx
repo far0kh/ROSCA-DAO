@@ -13,10 +13,10 @@ function HeroSection() {
         <div
           className={cn(
             gilroyBold.className,
-            "text-6xl md:text-[6rem] text-center text-primary md:leading-[5.5rem] my-8 md:my-12"
+            "text-5xl md:text-[6rem] text-center text-primary md:leading-[5.5rem] my-8 md:my-12"
           )}
         >
-          0% Interest, <br /> When We Save <br /> Together!
+          Interest-free Loans, <br /> Saving Together!
         </div>
 
         <p className="mb-8 text-xl md:text-2xl text-center text-slate-700">
