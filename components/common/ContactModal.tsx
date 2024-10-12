@@ -48,12 +48,12 @@ export default function ContactModal() {
           size="lg"
           className="rounded-[12px] border-[1px] border-[#EDEEF0] bg-transparent hover:bg-transparent text-gray-300 hover:text-white"
         >
-          Contact Us
+          Contact us
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Contact Us</DialogTitle>
+          <DialogTitle>Contact us</DialogTitle>
           <DialogDescription>
             Send us a message and we&apos;ll get back to you as soon as possible.
           </DialogDescription>

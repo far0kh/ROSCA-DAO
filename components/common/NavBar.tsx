@@ -67,7 +67,7 @@ function NavBar() {
                   size='lg'
                   className="h-12 px-4 bg-white border text-gray-700 border-gray-200 rounded-3xl hover:bg-white hover:text-orange-500"
                 >
-                  Sign In
+                  Sign in
                 </Button>
               </SignInButton>
               <SignUpButton>
@@ -75,7 +75,7 @@ function NavBar() {
                   size='lg'
                   className="h-12 px-4 border-none rounded-3xl hover:bg-orange-500"
                 >
-                  Get Started
+                  Get started
                 </Button>
               </SignUpButton>
             </SignedOut>
@@ -139,7 +139,7 @@ function NavBar() {
                       size='lg'
                       className="h-12 px-4 bg-white border text-gray-700 border-gray-200 rounded-3xl hover:bg-white hover:text-orange-500"
                     >
-                      Sign In
+                      Sign in
                     </Button>
                   </SignInButton>
                   <SignUpButton>
@@ -147,7 +147,7 @@ function NavBar() {
                       size='lg'
                       className="h-12 px-4 border-none rounded-3xl hover:bg-orange-500"
                     >
-                      Get Started
+                      Get started
                     </Button>
                   </SignUpButton>
                 </SignedOut>

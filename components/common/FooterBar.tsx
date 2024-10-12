@@ -75,7 +75,7 @@ function FooterBar() {
                   size='lg'
                   className="h-10 px-4 border-none bg-gray-700 hover:bg-orange-500 rounded-xl"
                 >
-                  Get Started
+                  Get started
                 </Button>
               </SignUpButton>
             </SignedOut>
