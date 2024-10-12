@@ -1,6 +1,7 @@
 import React from "react";
-import MainButton from "./MainButton";
-import ContactModal from "./ContactModal";
+import { Button } from '@/components/ui/button'
+import ContactModal from "./ContactModal"
+import { SignUpButton, SignedOut } from '@clerk/nextjs'
 
 function FooterBar() {
   const data = {
@@ -66,14 +67,18 @@ function FooterBar() {
           </div>
         </div> */}
         <div className="min-w-[300px]">
-          <p className="font-medium text-[#9098A0] mb-4">Ready to start?</p>
           <div className="flex flex-col gap-3 justify-start">
-            <MainButton
-              text="Get Started"
-              size="small"
-              width="full_width"
-              className="border-none bg-gray-700 hover:bg-orange-500 rounded-xl"
-            />
+            <SignedOut>
+              <p className="font-medium text-gray-400">Ready to start?</p>
+              <SignUpButton>
+                <Button
+                  size='lg'
+                  className="h-10 px-4 border-none bg-gray-700 hover:bg-orange-500 rounded-xl"
+                >
+                  Get Started
+                </Button>
+              </SignUpButton>
+            </SignedOut>
             <ContactModal />
           </div>
         </div>

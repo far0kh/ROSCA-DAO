@@ -1,9 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import MainButton from "./MainButton";
+import { Button } from '@/components/ui/button'
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
+import {
+  SignUpButton,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+  SignOutButton
+} from '@clerk/nextjs'
 
 function NavBar() {
   const links: { route: string; name: string; badgeCount?: number }[] = [
@@ -53,17 +61,29 @@ function NavBar() {
             ))}
           </div>
           <div className="flex items-center gap-[20px] select-none">
-            <MainButton
-              text="Sign in"
-              width="contain"
-              className="bg-white border text-[#31373D] border-[#EDEEF0] hover:bg-white hover:text-orange-500"
-            />
+            <SignedOut>
+              <SignInButton>
+                <Button
+                  size='lg'
+                  className="h-12 px-4 bg-white border text-gray-700 border-gray-200 rounded-3xl hover:bg-white hover:text-orange-500"
+                >
+                  Sign In
+                </Button>
+              </SignInButton>
+              <SignUpButton>
+                <Button
+                  size='lg'
+                  className="h-12 px-4 border-none rounded-3xl hover:bg-orange-500"
+                >
+                  Get Started
+                </Button>
+              </SignUpButton>
+            </SignedOut>
 
-            <MainButton
-              text="Get Started"
-              width="contain"
-              className="border-none hover:bg-orange-500"
-            />
+            <SignedIn>
+              <SignOutButton />
+              <UserButton />
+            </SignedIn>
           </div>
         </div>
       </div>
@@ -113,17 +133,29 @@ function NavBar() {
               ))}
 
               <div className="flex flex-col gap-[20px] select-none">
-                <MainButton
-                  text="Sign In"
-                  width="contain"
-                  className="bg-white text-[#31373D] border-[#EDEEF0] hover:bg-white"
-                />
+                <SignedOut>
+                  <SignInButton>
+                    <Button
+                      size='lg'
+                      className="h-12 px-4 bg-white border text-gray-700 border-gray-200 rounded-3xl hover:bg-white hover:text-orange-500"
+                    >
+                      Sign In
+                    </Button>
+                  </SignInButton>
+                  <SignUpButton>
+                    <Button
+                      size='lg'
+                      className="h-12 px-4 border-none rounded-3xl hover:bg-orange-500"
+                    >
+                      Get Started
+                    </Button>
+                  </SignUpButton>
+                </SignedOut>
 
-                <MainButton
-                  text="Get Started"
-                  width="contain"
-                  className="border-none hover:bg-orange-500"
-                />
+                <SignedIn>
+                  <UserButton />
+                  <SignOutButton />
+                </SignedIn>
               </div>
             </div>
           </div>

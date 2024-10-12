@@ -1,10 +1,10 @@
 import React from "react";
-import MainButton from "../common/MainButton";
-import { cn } from "@/lib/utils";
-import { gilroyBold } from "@/lib/utils";
-import { HeroYoutubeModal } from "./HeroYoutubeModal";
-import { TbFlame } from "react-icons/tb";
-import { FaRocket } from "react-icons/fa";
+import { Button } from '@/components/ui/button'
+import { cn } from "@/lib/utils"
+import { gilroyBold } from "@/lib/utils"
+import { HeroYoutubeModal } from "./HeroYoutubeModal"
+import { FaRocket } from "react-icons/fa"
+import { SignUpButton, SignedOut } from '@clerk/nextjs'
 
 function HeroSection() {
   return (
@@ -24,12 +24,17 @@ function HeroSection() {
         </p>
 
         <div className="flex gap-3 justify-center">
-          <MainButton
-            text="Start now"
-            size="small"
-            className="border-none gap-1 rounded-xl hover:bg-orange-500"
-            iconComponent={<FaRocket size={15} />}
-          />
+          <SignedOut>
+            <SignUpButton>
+              <Button
+                size='lg'
+                className="h-10 px-4 border-none gap-1 rounded-xl hover:bg-orange-500"
+              >
+                <FaRocket size={15} className="mr-2" />
+                Start now
+              </Button>
+            </SignUpButton>
+          </SignedOut>
         </div>
 
         <div className="flex w-full justify-center mt-8 md:mt-12">
